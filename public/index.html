@@ -1,0 +1,129 @@
+<html>
+  <head>
+    <title>Party Timer</title>
+
+        <!-- update the version number as needed -->
+        <script defer src="/__/firebase/7.17.1/firebase-app.js"></script>
+        <!-- include only the Firebase features as you need -->
+        <script defer src="/__/firebase/7.17.1/firebase-auth.js"></script>
+        <script defer src="/__/firebase/7.17.1/firebase-database.js"></script>
+        <script defer src="/__/firebase/7.17.1/firebase-messaging.js"></script>
+        <script defer src="/__/firebase/7.17.1/firebase-storage.js"></script>
+        <!-- initialize the SDK after all desired features are loaded -->
+        <script defer src="/__/firebase/init.js"></script>
+        
+    <div class="wrapper active-element">
+      <header class="main-header">
+          <nav>
+              <div class="masthead active-element">
+                  <h1><a href="#0">PartyTimer</a></h1>
+                  <div id="menu-toggle" class="menu-toggle active-element">
+                      <div class="one"></div>
+                      <div class="two"></div>
+                      <div class="three"></div>
+                  </div>
+              </div>
+              <div class="main-nav-list active-element">
+                  <ul>
+                      <li><a href="#0" class="active-link">Skill</a></li>
+                      <li><a href="#0">Contact</a></li>
+                  </ul>
+              </div>
+          </nav>
+      </header>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body id="mainImage">
+    <div class="page">
+      <!-- <header>
+      <h1>LOLCAT CLOCK</h1>
+    </header> -->
+
+      <h4>
+        <span id="clock"></span>
+      </h4>
+
+      <!-- <img id="backgroundImage"
+        src="https://lh4.googleusercontent.com/proxy/oZ-bLFPBtolvJiL2yOFZmrZcjhDYv9QqnQ1v4BJEP8BqEU2msT9orfeKJVLjM_r2Xxna76uvF4XL00YR-1QWvQ6SThYFvoifglBYZ89dkU7y=w3840-h2160-p-k-no-nd-mv"
+        alt="lolcat"/> -->
+
+      <!-- <blockquote id="timeEvent">This is where time events are reported</blockquote> -->
+      set Wake Up Time
+      <select id="wakeUpTimeSelector">
+        <option value="1">AM 4:00</option>
+        <option value="2">AM 4:30</option>
+        <option value="3">AM 5:00</option>
+        <option value="4">AM 5:30</option>
+        <option value="5">AM 6:00</option>
+        <option value="6">AM 6:15</option>
+        <option value="7">AM 6:30</option>
+        <option value="8">AM 6:45</option>
+        <option value="9">AM 7:00</option>
+        <option value="10">AM 7:15</option>
+        <option value="11">AM 7:30</option>
+        <option value="12">AM 7:45</option>
+        <option value="13" selected>AM 8:00</option>
+        <option value="14">AM 8:15</option>
+        <option value="15">AM 8:30</option>
+        <option value="16">AM 8:45</option>
+        <option value="17">AM 9:00</option>
+        <option value="18">AM 9:15</option>
+        <option value="19">AM 9:30</option>
+        <option value="20">AM 9:45</option>
+        <option value="21">AM 10:00</option>
+        <option value="22">AM 10:15</option>
+        <option value="23">AM 10:30</option>
+        <option value="24">AM 10:45</option>
+        <option value="25">AM 11:00</option>
+        <option value="26">AM 11:30</option>
+        <option value="27">PM 12:00</option>
+        <option value="28">PM 12:30</option>
+        <option value="29">PM 1:00</option>
+        <option value="30">PM 1:30</option>
+        <option value="31">PM 2:00</option>
+      </select>
+      <br />
+      <!-- set Nap Time -->
+      <!-- <selet id="napTimeSelector">
+        <option value="15" selected>PM 3:00</option>
+        <option value="16">PM 4:00</option>
+        <option value="17">PM 5:00</option>
+        <option value="18">PM 6:00</option>
+        <option value="19">PM 7:00</option>
+        <option value="20">PM 8:00</option>
+        <option value="21">PM 9:00</option>
+        <option value="22">PM 10:00</option>
+        <option value="23">PM 11:00</option>
+        <option value="24">PM 12:00</option>
+      </selet> -->
+      <!-- <br /> -->
+      <button id="partyTimeButton"></button>
+
+      <audio id="audio" controls>
+        <source src="￼file:///Users/satouhiroki/Downloads/%E7%9B%AE%E8%A6%9A%E3%81%BE%E3%81%97ceneral.mp3">
+        </audio>        
+        <div>
+          <input id="alarmPlayButton" type="button" value="play" onclick="audio_play()">
+          <input id="alarmPauseButton" type="button" value="pause" onclick="audio_pause()">
+        </div>
+        <br>
+
+      <footer>
+        <p>&copy; Alarm point 2020</p>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.17.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.17.1/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+  </body>
+</html>
